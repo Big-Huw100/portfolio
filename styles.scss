@@ -15,7 +15,7 @@ $color-white: #F5F5F5;
     font-family: $font-body;
 }
 
-body {
+html body {
     background-color: $color-black;
 }
 
@@ -64,7 +64,6 @@ body {
     &__card {
         background-color: $color-secondary;
         color: $color-black;
-        font-size: 20px;
         width: 66%;
         display: flex;
         align-items: center;
@@ -108,5 +107,35 @@ body {
         padding: 30px;
         margin-top: 20px;
         font-size: 30px;
+    }
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__title {
+        background-color: $color-secondary;
+        width: 400px;
+        height: 80px;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+
+    &__project {
+        background-color: $color-primary;
+        color: $color-white;
+        text-align: center;
+        border: 10px solid $color-black;
+        font-size: 30px;
+    }
+
+    &__image {
+        background-color: $color-white;
+        height: 400px;
+        margin-bottom: 10px;
     }
 }

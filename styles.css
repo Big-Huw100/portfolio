@@ -6,7 +6,7 @@
   font-family: Helvetica, sans-serif;
 }
 
-body {
+html body {
   background-color: #1A1B1E;
 }
 
@@ -52,7 +52,6 @@ body {
 .welcome__card {
   background-color: #46F5E9;
   color: #1A1B1E;
-  font-size: 20px;
   width: 66%;
   display: flex;
   align-items: center;
@@ -91,4 +90,31 @@ body {
   padding: 30px;
   margin-top: 20px;
   font-size: 30px;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.projects__title {
+  background-color: #46F5E9;
+  width: 400px;
+  height: 80px;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+.projects__project {
+  background-color: #B14548;
+  color: #F5F5F5;
+  text-align: center;
+  border: 10px solid #1A1B1E;
+  font-size: 30px;
+}
+.projects__image {
+  background-color: #F5F5F5;
+  height: 400px;
+  margin-bottom: 10px;
 }
