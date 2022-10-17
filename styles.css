@@ -42,3 +42,25 @@ body {
   color: #F5F5F5;
   padding: 40px;
 }
+
+.welcome {
+  display: flex;
+  justify-content: flex-end;
+  padding: 100px 50px;
+}
+.welcome__square {
+  background-color: #46F5E9;
+  color: #1A1B1E;
+  font-size: 20px;
+  width: 66%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 350px;
+  font-size: 30px;
+  text-align: right;
+}
+.welcome__copy {
+  width: 50%;
+  margin-right: 50px;
+}
