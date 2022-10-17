@@ -51,7 +51,7 @@ html body {
     &__link {
         text-decoration: none;
         color: $color-white;
-        padding: 40px;
+        padding: 0 40px;
     }
 }
 
@@ -181,7 +181,6 @@ html body {
 
     &__logos {
         background-color: $color-primary;
-        color: $color-white;
         display: flex;
         justify-content: space-around;
         padding: 30px 100px;
@@ -191,5 +190,7 @@ html body {
 
     &__image {
         font-size: 100px;
+        text-decoration: none;
+        color: $color-white;
     }
 }

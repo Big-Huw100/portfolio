@@ -40,7 +40,7 @@ html body {
 .nav__link {
   text-decoration: none;
   color: #F5F5F5;
-  padding: 40px;
+  padding: 0 40px;
 }
 
 .welcome {
@@ -157,7 +157,6 @@ html body {
 }
 .contact__logos {
   background-color: #B14548;
-  color: #F5F5F5;
   display: flex;
   justify-content: space-around;
   padding: 30px 100px;
@@ -166,4 +165,6 @@ html body {
 }
 .contact__image {
   font-size: 100px;
+  text-decoration: none;
+  color: #F5F5F5;
 }
