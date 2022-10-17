@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+
+$font-body: Helvetica, sans-serif;
+$font-logo: "Aguafina Script";
+
+$color-primary: #B14548;
+$color-secondary: #46F5E9;
+$color-black: #1A1B1E;
+$color-white: #F5F5F5;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+}
+
+body {
+    background-color: $color-black;
+}
+
+.nav {
+    color: $color-white;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+
+    &__logo {
+        padding-left: 10px;
+        padding-right: 30px;
+        margin-left: 20px;
+        font-size: 40px;
+        background-color: $color-black;
+        border-radius: 100px;
+        font-family: $font-logo;
+    }
+
+    &__links {
+        background-color: $color-black;
+        padding: 10px;
+        margin-right: 20px;
+        border-radius: 20px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+        padding: 40px;
+    }
+}
