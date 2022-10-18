@@ -42,6 +42,9 @@ html body {
   color: #F5F5F5;
   padding: 0 40px;
 }
+.nav__link:hover {
+  color: #F5F5F5;
+}
 
 .welcome {
   display: flex;

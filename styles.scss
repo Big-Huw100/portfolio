@@ -53,6 +53,10 @@ html body {
         color: $color-white;
         padding: 0 40px;
     }
+
+    &__link:hover {
+        color: $color-white;
+    }
 }
 
 .welcome {
