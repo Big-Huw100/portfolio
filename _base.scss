@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+
+$font-body: Helvetica, sans-serif;
+$font-logo: "Aguafina Script";
+
+$color-primary: #B14548;
+$color-secondary: #46F5E9;
+$color-black: #1A1B1E;
+$color-white: #F5F5F5;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+}
+
+html body {
+    background-color: $color-black;
+}
