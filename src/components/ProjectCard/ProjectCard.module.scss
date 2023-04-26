@@ -1,0 +1,13 @@
+.projectCard {
+    border: solid black 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    margin: 40px;
+
+    .projectName {
+        font-size: 40px;
+        text-align: center;
+    }
+}
