@@ -7,14 +7,14 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 const ProjectCard = (props) => {
 
   const {
-    name,
+    projectName,
     projectImage,
     githubLink,
-  } = props.projects
+  } = props.project;
 
   return (
     <div className={styles.projectCard}>
-      <h1 className={styles.projectName}>{name}</h1>
+      <h1 className={styles.projectName}>{projectName}</h1>
       <img src={projectImage} />
       <span className={styles.linkIcons}>
          <a href={githubLink} target='blank'><FontAwesomeIcon icon={faGithub} /></a>
@@ -23,5 +23,6 @@ const ProjectCard = (props) => {
     </div>
   )
 }
+
 
 export default ProjectCard

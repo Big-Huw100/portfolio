@@ -5,7 +5,13 @@ import Footer from './components/Footer';
 
 import projects from './data/projects';
 
+
 const App = () => {
+
+  const getProjectCard = (project) => (
+    <ProjectCard key={project.id} project={project} />
+  );
+
   return (
     <>
     <section className={styles.header}>
@@ -16,7 +22,9 @@ const App = () => {
       <NavBar />
       <p className={styles.bio}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ipsum quidem autem, atque modi nostrum aspernatur non consequuntur eaque dolore ratione maxime error alias accusamus recusandae aliquid totam magnam. Suscipit.</p>
     </section>
-    <ProjectCard projects={projects[0]}/>
+    <section>
+      {projects.map(getProjectCard)}
+      </section>
     <Footer />
     </>
   );
