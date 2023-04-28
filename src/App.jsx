@@ -1,6 +1,7 @@
 import styles from './App.module.scss';
 import NavBar from './components/NavBar';
 import ProjectCard from './components/ProjectCard';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <p className={styles.bio}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ipsum quidem autem, atque modi nostrum aspernatur non consequuntur eaque dolore ratione maxime error alias accusamus recusandae aliquid totam magnam. Suscipit.</p>
     </section>
     <ProjectCard />
+    <Footer />
     </>
   );
 }
