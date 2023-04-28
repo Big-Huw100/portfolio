@@ -13,9 +13,18 @@
     }
 
     .linkIcons {
+        color: black;
         display: flex;
         justify-content: space-around;
         font-size: 50px;
         margin: 10px;
+
+        a { color: inherit; } 
+        
+        a:hover {
+            color:#00A0C6; 
+            text-decoration:none; 
+            cursor:pointer;  
+        }
     }
 }

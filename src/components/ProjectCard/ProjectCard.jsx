@@ -4,13 +4,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
+
+  const {
+    name,
+    projectImage,
+    githubLink,
+  } = props.projects
+
   return (
     <div className={styles.projectCard}>
-      <h1 className={styles.projectName}>Project Name</h1>
-      <img src="./images/huw-godzilla.jpg" alt="Huw with Godzilla" />
+      <h1 className={styles.projectName}>{name}</h1>
+      <img src={projectImage} />
       <span className={styles.linkIcons}>
-        <FontAwesomeIcon icon={faGithub} />
+         <a href={githubLink} target='blank'><FontAwesomeIcon icon={faGithub} /></a>
         <FontAwesomeIcon icon={faRocket} />
       </span>
     </div>
