@@ -6,8 +6,8 @@ const NavBar = () => {
   return (
     <div className={styles.NavBar}>
         <section className={styles.links}>
-            <h1>Projects</h1>
-            <h1>Contact</h1>
+            <a href="#projectGrid"><h1>Projects</h1></a>
+            <a href="#footer"><h1>Contact</h1></a>
         </section>
     </div>
   )

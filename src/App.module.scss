@@ -29,3 +29,8 @@
         font-size: 30px;
     }
 }
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

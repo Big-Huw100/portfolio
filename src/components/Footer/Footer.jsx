@@ -6,11 +6,11 @@ import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <div id='footer' className={styles.footer}>
         <span className={styles.linkIcons}>
         <FontAwesomeIcon icon={faEnvelope} />
-        <FontAwesomeIcon icon={faLinkedin} />
-        <FontAwesomeIcon icon={faTwitter} />
+        <a href="https://www.linkedin.com/in/huw-williams-09337767/" target='blank'><FontAwesomeIcon icon={faLinkedin} /></a>
+        <a href="https://twitter.com/big_huw" target='blank'><FontAwesomeIcon icon={faTwitter} /></a>
       </span>
     </div>
   )

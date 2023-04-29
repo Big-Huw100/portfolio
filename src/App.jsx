@@ -22,7 +22,7 @@ const App = () => {
       <NavBar />
       <p className={styles.bio}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ipsum quidem autem, atque modi nostrum aspernatur non consequuntur eaque dolore ratione maxime error alias accusamus recusandae aliquid totam magnam. Suscipit.</p>
     </section>
-    <section>
+    <section id='projectGrid' className={styles.projectGrid}>
       {projects.map(getProjectCard)}
       </section>
     <Footer />
