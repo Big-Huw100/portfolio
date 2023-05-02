@@ -10,6 +10,7 @@ const ProjectCard = (props) => {
     projectName,
     projectImage,
     githubLink,
+    pagesLink,
   } = props.project;
 
   return (
@@ -18,7 +19,7 @@ const ProjectCard = (props) => {
       <img src={projectImage} />
       <span className={styles.linkIcons}>
          <a href={githubLink} target='blank'><FontAwesomeIcon icon={faGithub} /></a>
-        <FontAwesomeIcon icon={faRocket} />
+        <a href={pagesLink} target='blank'><FontAwesomeIcon icon={faRocket} /></a>
       </span>
     </div>
   )
