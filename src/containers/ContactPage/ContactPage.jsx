@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Header from '../../components/Header';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 function ContactPage() {
   return (
-    <h1>Contact Page</h1>
+    <>
+    <Header />
+    <ContactForm />
+    </>
   )
 }
 

@@ -1,21 +1,36 @@
 import styles from './App.module.scss';
-import Header from './components/Header';
-import Intro from './components/Intro';
-import ProjectGrid from './components/ProjectGrid/ProjectGrid';
-import Footer from './components/Footer';
+import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider } from 'react-router-dom';
+import Home from './containers/Home'; 
+import ContactPage from './containers/ContactPage';
 
 const App = () => {
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Root />}>
+        <Route index element={<Home />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Route>
+    )
+  )
 
   return (
     <>
     <main className={styles.App}>
-      <Header />
-      <Intro />
-      <ProjectGrid />
-      <Footer />
+      <RouterProvider router={router} />
     </main>
     </>
   );
+}
+
+const Root = () => {
+  return (
+    <>
+      <div>
+        <Outlet />
+      </div>
+    </>
+  )
 }
 
 export default App;

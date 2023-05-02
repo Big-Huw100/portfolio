@@ -1,8 +1,8 @@
-import styles from './App.module.scss';
-import Header from './components/Header';
-import Intro from './components/Intro';
-import ProjectGrid from './components/ProjectGrid/ProjectGrid';
-import Footer from './components/Footer';
+import styles from '../../App.module.scss';
+import Header from '../../components/Header';
+import Intro from '../../components/Intro';
+import ProjectGrid from '../../components/ProjectGrid/ProjectGrid';
+import Footer from '../../components/Footer';
 
 const Home = () => {
 
