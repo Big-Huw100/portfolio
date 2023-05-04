@@ -1,34 +1,45 @@
 import React, { useState } from 'react';
+import { db } from '../../firebaseConfig';
+import { addDoc, collection } from 'firebase/firestore'
 import styles from './ContactForm.module.scss';
 
 const ContactForm = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-      });
-    
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        // handle form submission here
-      };
-    
-      const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-      };
+    const [name,setName] = useState();
+    const [email,setEmail] = useState();
+    const [message,setMessage] = useState();
+
+    const userCollectionRef = collection(db,"contactdata")
+
+    const handleSubmit = () => {
+      addDoc(userCollectionRef,{
+        name: name,
+        email: email,
+        message: message
+      }).then(() => {
+        if(!alert("Form Submitted Successfully!!!")) document.location = 'https://www.google.co.uk/'
+      }).catch((error) => {
+        alert(error.message)
+      })
+    }
 
   return (
-     <form className={styles.ContactForm} onSubmit={handleSubmit}>
+     <form className={styles.ContactForm}>
       <label htmlFor="name">Name</label>
-      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} />
+      <input type="text" id="name" name="name" onChange={(event) => {
+        setName(event.target.value)
+      }} />
 
       <label htmlFor="email">Email</label>
-      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
+      <input type="email" id="email" name="email" onChange={(event) => {
+        setEmail(event.target.value)
+      }} />
 
       <label htmlFor="message">Message</label>
-      <textarea id="message" name="message" value={formData.message} onChange={handleChange} />
+      <textarea id="message" name="message" onChange={(event) => {
+        setMessage(event.target.value)
+      }} />
 
-      <button type="submit">Send</button>
+      <button onClick={handleSubmit} type="submit">Send</button>
     </form>
   )
 }
