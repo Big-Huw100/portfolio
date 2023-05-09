@@ -1,4 +1,5 @@
-import styles from '../../App.module.scss';
+
+import styles from './Home.module.scss';
 import Header from '../../components/Header';
 import Intro from '../../components/Intro';
 import ProjectGrid from '../../components/ProjectGrid/ProjectGrid';

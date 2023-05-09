@@ -6,9 +6,13 @@ import Footer from '../../components/Footer'
 function ContactPage() {
   return (
     <>
+    <main>
     <Header />
     <ContactForm />
+    <footer>
     <Footer />
+    </footer>
+    </main>
     </>
   )
 }
