@@ -15,7 +15,7 @@
         padding: 10px;
     }
 
-    button {
+    .button {
         padding: 10px;
         margin: 10px;
         border: none;
@@ -27,9 +27,5 @@
     textarea {
         height: 250px;
         width: 300px;
-    }
-
-    button:hover {
-        cursor: pointer;
     }
 }
