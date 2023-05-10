@@ -6,7 +6,10 @@ const Header = () => {
   return (
     <section className={styles.header}>
       <Link to="/"><img className={styles.img} src="./images/huw-godzilla.jpg" alt="Me with Godzilla" /></Link>
-      <h1 className={styles.title}>Huw Williams</h1>
+      <section className={styles.title}>
+        <h1 className={styles.name}>Huw Williams</h1>
+        <h2 className={styles.job}>Web Developer</h2>
+      </section>
     </section>
   )
 }

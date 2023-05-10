@@ -1,8 +1,13 @@
 .intro {
     display: flex;
+    color: white;
 
     .bio {
-        margin: 100px;
+        display: flex;
+        align-items: center;
+        text-align: right;
         font-size: 30px;
+        margin: 0;
+        padding: 40px;
     }
 }

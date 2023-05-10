@@ -1,18 +1,37 @@
 .header {
     display: flex;
     justify-content: space-between;
+    color: white;
 
     .img {
-        height: 200px;
-        width: 200px;
-        border: solid black 4px;
-        border-radius: 100px;
+        height: 300px;
+        width: 300px;
+        border: solid white 4px;
+        border-radius: 100px 50px 60px 20px;
         margin: 40px;
         margin-bottom: 0;
     }
-    
-    .title {
-        font-size: 70px;
-        margin: 40px;
+
+    .img:hover {
+        border: solid #00A0C6 4px;
     }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .name {
+                font-size: 130px;
+                margin-top: 40px;
+                margin-right: 40px;
+            }
+
+            .job {
+                font-size: 50px;
+                margin-right: 40px;
+            }
+    }
+    
+    
 }

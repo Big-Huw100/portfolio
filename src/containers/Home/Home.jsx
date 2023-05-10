@@ -1,4 +1,3 @@
-
 import styles from './Home.module.scss';
 import Header from '../../components/Header';
 import Intro from '../../components/Intro';
@@ -12,7 +11,9 @@ const Home = () => {
     <main className={styles.App}>
       <Header />
       <Intro />
-      <ProjectGrid />
+      <section className={styles.projectContainer}>
+        <ProjectGrid />
+      </section>
       <Footer />
     </main>
     </>

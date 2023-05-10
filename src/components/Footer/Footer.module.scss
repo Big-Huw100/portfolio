@@ -1,8 +1,8 @@
 .footer {
-    background-color: black;
+    background-color: white;
 
     .linkIcons {
-        color: white;
+        color: black;
         font-size: 70px;
         display: flex;
         justify-content: space-around;
@@ -11,7 +11,7 @@
         a { color: inherit; } 
         
         a:hover {
-            color:#00A0C6; 
+            color:#00A0C6;
             text-decoration:none; 
             cursor:pointer;  
         }
