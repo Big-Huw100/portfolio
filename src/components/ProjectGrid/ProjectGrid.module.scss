@@ -1,5 +1,13 @@
 .projectGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media only screen and (min-width: 768px) and (max-width: 2092px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media only screen and (max-width: 1337px) {
+    grid-template-columns: 1fr;
+  }
 }
