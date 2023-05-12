@@ -38,7 +38,7 @@ const ContactForm = () => {
         </form>
       ) : (
         <div className={styles.ConfirmationMessage}>
-          <p>Thank you for your message! I'll get back to you as soon as I can!</p>
+          <p>Thank you for your message. I'll get back to you as soon as I can!</p>
           <button onClick={() => setIsSubmitted(false)}>Send Another Message</button>
         </div>
       )}

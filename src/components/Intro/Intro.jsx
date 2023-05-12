@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <section className={styles.intro}>
       <NavBar />
-      <p className={styles.bio}>A Junior Web Developer based in Cardiff. A creative since the start, my passion and need to create and build has found it's home as I finally find a love for the medium of Web Development.</p>
+      <p className={styles.bio}>A Junior Web Developer based in Cardiff. A life long creative, my passion and need to create and build has found it's home in the medium of Web Development.</p>
     </section>
   )
 }
