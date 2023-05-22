@@ -14,8 +14,6 @@ const App = () => {
     )
   )
 
-  // comment
-
   return (
     <>
     <main className={styles.App}>
