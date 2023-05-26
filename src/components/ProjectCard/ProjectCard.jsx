@@ -14,9 +14,11 @@ const ProjectCard = (props) => {
     description,
   } = props.project;
 
+  // const image = require(projectImage)
+
   return (
     <div className={styles.projectCard}>
-      <img src={projectImage} />
+      <img src={require(projectImage).default} />
       <section className={styles.rightHandSide}>
         <h1 className={styles.projectName}>{projectName}</h1>
         <p>{description}</p>
