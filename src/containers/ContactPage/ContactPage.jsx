@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import NavBar from '../../components/NavBar'
 import Footer from '../../components/Footer'
 
 function ContactPage() {
@@ -8,6 +9,7 @@ function ContactPage() {
     <>
     <main>
     <Header />
+    <NavBar />
     <ContactForm />
     <footer>
     <Footer />

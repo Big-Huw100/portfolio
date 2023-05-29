@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div id='footer' className={styles.footer}>
         <span className={styles.linkIcons}>
-        <Link to="/contact"><FontAwesomeIcon icon={faEnvelope} /></Link>
+        <Link to="contact"><FontAwesomeIcon icon={faEnvelope} /></Link>
         <a href="https://www.linkedin.com/in/huw-williams-09337767/" target='blank'><FontAwesomeIcon icon={faLinkedin} /></a>
         <a href="https://twitter.com/big_huw" target='blank'><FontAwesomeIcon icon={faTwitter} /></a>
       </span>
