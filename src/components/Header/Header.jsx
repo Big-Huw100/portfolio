@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Header.module.scss'
 import { Link } from 'react-router-dom'
-import thisisme from "../../images/huw-godzilla.jpg";
+import thisisme from '../../images/huw-godzilla.jpg';
 
 const Header = () => {
   return (
