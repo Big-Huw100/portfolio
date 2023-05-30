@@ -9,6 +9,7 @@ const ProjectCard = (props) => {
   const {
     projectName,
     projectImage,
+    altText,
     githubLink,
     pagesLink,
     description,
@@ -16,7 +17,7 @@ const ProjectCard = (props) => {
 
   return (
     <div className={styles.projectCard}>
-      <img src={projectImage} />
+      <img src={projectImage} alt={altText} />
       <section className={styles.rightHandSide}>
         <h1 className={styles.projectName}>{projectName}</h1>
         <p>{description}</p>
