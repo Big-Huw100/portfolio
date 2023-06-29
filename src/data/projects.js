@@ -1,9 +1,11 @@
+import calculator from '../images/js-calculator.png';
+import toptrumps from "../images/x-men-top-trumps.png";
+
 const projects = [
     {
         "id": 1,
         "projectName": "JS Calculator",
-        "projectImage": "../../images/js-calculator.png",
-        "altText": "A Calculator",
+        "projectImage": {calculator},
         "githubLink": "https://github.com/Big-Huw100/js-calculator",
         "pagesLink": "https://big-huw100.github.io/js-calculator/",
         "description": "A simple calculator built with Javascript.",
@@ -11,7 +13,7 @@ const projects = [
     {
         "id": 2,
         "projectName": "X-MEN Top Trumps",
-        "projectImage": "../../images/x-men-top-trumps.png",
+        "projectImage": {toptrumps},
         "altText": "Top Trumps",
         "githubLink": "https://github.com/Big-Huw100/x-men-top-trumps",
         "pagesLink": "https://big-huw100.github.io/x-men-top-trumps/",
