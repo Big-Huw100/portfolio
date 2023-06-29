@@ -1,5 +1,9 @@
 import calculator from '../images/js-calculator.png';
 import toptrumps from "../images/x-men-top-trumps.png";
+import morsecode from "../images/morse-code-translator.png";
+import shootemup from "../images/alien-shooter.png";
+import punkapi from "../images/punk-api.png";
+
 
 const projects = [
     {
@@ -22,7 +26,7 @@ const projects = [
     {
         "id": 3,
         "projectName": "Morse Code Translator",
-        "projectImage": "../../images/morse-code-translator.png",
+        "projectImage": {morsecode},
         "altText": "Morse Code Translator",
         "githubLink": "https://github.com/Big-Huw100/morse-code-translator",
         "pagesLink": "https://big-huw100.github.io/morse-code-translator/",
@@ -31,7 +35,7 @@ const projects = [
     {
         "id": 4,
         "projectName": "Alien Shoot 'em Up",
-        "projectImage": "../../images/alien-shooter.png",
+        "projectImage": {shootemup},
         "altText": "Alien Spaceships",
         "githubLink": "https://github.com/Big-Huw100/alien-shooter",
         "pagesLink": "https://big-huw100.github.io/alien-shooter/",
@@ -40,7 +44,7 @@ const projects = [
     {
         "id": 5,
         "projectName": "Punk IPA API",
-        "projectImage": "../../images/punk-api.png",
+        "projectImage": {punkapi},
         "alttext": "Punk Beers",
         "githubLink": "https://github.com/Big-Huw100/punk-api",
         "pagesLink": "https://big-huw100.github.io/punk-api/",
