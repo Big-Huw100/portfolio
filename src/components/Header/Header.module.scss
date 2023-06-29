@@ -25,6 +25,7 @@
     .title {
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
 
         .name {
             font-size: 130px;
