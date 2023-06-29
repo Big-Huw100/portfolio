@@ -10,6 +10,12 @@
         border-radius: 100px 50px 60px 20px;
         margin: 40px;
         margin-bottom: 0;
+
+        @media only screen and (max-width: 767px) {
+            height: 150px;
+            width: 150px;
+            border-radius: 50px 25px 30px 10px;
+        }
     }
 
     .img:hover {
@@ -19,20 +25,25 @@
     .title {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
 
         .name {
-                font-size: 130px;
-                margin-top: 40px;
-                margin-right: 40px;
-            }
+            font-size: 130px;
+            margin-top: 40px;
+            margin-right: 40px;
 
-            .job {
-                font-size: 50px;
-                margin-right: 40px;
-                color: #00A0C6;
+            @media only screen and (max-width: 767px) {
+                font-size: 35px;
             }
+        }
+
+        .job {
+            font-size: 50px;
+            margin-right: 40px;
+            color: #00A0C6;
+
+            @media only screen and (max-width: 767px) {
+                font-size: 18px;
+            }
+        }
     }
-    
-    
 }
