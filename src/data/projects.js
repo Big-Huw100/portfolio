@@ -9,7 +9,7 @@ const projects = [
     {
         "id": 1,
         "projectName": "JS Calculator",
-        "projectImage": {calculator},
+        "projectImage": calculator,
         "githubLink": "https://github.com/Big-Huw100/js-calculator",
         "pagesLink": "https://big-huw100.github.io/js-calculator/",
         "description": "A simple calculator built with Javascript.",
@@ -17,7 +17,7 @@ const projects = [
     {
         "id": 2,
         "projectName": "X-MEN Top Trumps",
-        "projectImage": {toptrumps},
+        "projectImage": toptrumps,
         "altText": "Top Trumps",
         "githubLink": "https://github.com/Big-Huw100/x-men-top-trumps",
         "pagesLink": "https://big-huw100.github.io/x-men-top-trumps/",
@@ -26,7 +26,7 @@ const projects = [
     {
         "id": 3,
         "projectName": "Morse Code Translator",
-        "projectImage": {morsecode},
+        "projectImage": morsecode,
         "altText": "Morse Code Translator",
         "githubLink": "https://github.com/Big-Huw100/morse-code-translator",
         "pagesLink": "https://big-huw100.github.io/morse-code-translator/",
@@ -35,7 +35,7 @@ const projects = [
     {
         "id": 4,
         "projectName": "Alien Shoot 'em Up",
-        "projectImage": {shootemup},
+        "projectImage": shootemup,
         "altText": "Alien Spaceships",
         "githubLink": "https://github.com/Big-Huw100/alien-shooter",
         "pagesLink": "https://big-huw100.github.io/alien-shooter/",
@@ -44,7 +44,7 @@ const projects = [
     {
         "id": 5,
         "projectName": "Punk IPA API",
-        "projectImage": {punkapi},
+        "projectImage": punkapi,
         "alttext": "Punk Beers",
         "githubLink": "https://github.com/Big-Huw100/punk-api",
         "pagesLink": "https://big-huw100.github.io/punk-api/",
