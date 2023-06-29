@@ -7,9 +7,9 @@ import Footer from '../../components/Footer'
 function ContactPage() {
   return (
     <>
-    <main>
     <Header />
     <NavBar />
+    <main>
     <ContactForm />
     <footer>
     <Footer />
