@@ -1,4 +1,4 @@
-import calculator from '../images/js-calculator.png';
+import calculator from "../images/js-calculator.png";
 import toptrumps from "../images/x-men-top-trumps.png";
 import morsecode from "../images/morse-code-translator.png";
 import shootemup from "../images/alien-shooter.png";
