@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ProjectCard.module.scss';
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -16,6 +17,7 @@ const ProjectCard = (props) => {
   } = props.project;
 
   return (
+    <Link to={pagesLink} target="blank" style={{ textDecoration: "none"}}>
     <div className={styles.projectCard}>
       <img src={projectImage} alt={altText} />
       <section className={styles.rightHandSide}>
@@ -27,6 +29,7 @@ const ProjectCard = (props) => {
       </section>
       </section>
     </div>
+    </Link>
   )
 }
 
